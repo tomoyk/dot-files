@@ -37,6 +37,23 @@ inoremap <C-k> <up>
 inoremap <C-h> <left>
 inoremap <C-l> <right>
 
+" Filer
+noremap <S-f> VimFiler -split -simple -winwidth=35 -no-quit
+
+" Modified code
+nnoremap == gg=G
+
+" dein-vim
+noremap 11 :VimFiler -split -simple -winwidth=30 -no-quit<ENTER>
+
+" enable vimfiler
+" autocmd VimEnter * VimFilerExplorer
+autocmd VimEnter * VimFilerExplorer | call s:MovePointerToMain()
+
+function s:MovePointerToMain()
+  call feedkeys("\<C-w>")
+  call feedkeys("\<C-w>")
+endfunction
 
 "dein Scripts-----------------------------
 if &compatible
@@ -61,12 +78,17 @@ if dein#load_state('/Users/tkoyama/.vim/dein/')
   call dein#add('tomtom/tcomment_vim') " commnet on some laws
   call dein#add('cohama/lexima.vim') " insert cacco automatically
   call dein#add('vim-scripts/AnsiEsc.vim') " log color scheme
-  call dein#add('bronson/vim-trailing-whitespace') " visualize margin space on line
+  "call dein#add('bronson/vim-trailing-whitespace') " visualize margin space on line
+  call dein#add('junegunn/vim-easy-align') " modify code
+
+  " vim explorer
+  call dein#add('Shougo/unite.vim') " useful plugin to use vimfilter and more
+  call dein#add('Shougo/vimfiler.vim') " vim file explorer
+  let g:vimfiler_as_default_explorer = 1
 
   " indent guide on colum
   call dein#add('nathanaelkane/vim-indent-guides')
   let g:indent_guides_enable_on_vim_startup = 1
-
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -86,3 +108,4 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+
