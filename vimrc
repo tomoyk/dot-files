@@ -28,7 +28,8 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 " add 2017/03/20
-colorscheme molokai
+"colorscheme molokai
+colorscheme seti
 syntax on
 
 " HJKL on insert mode
@@ -75,11 +76,19 @@ if dein#load_state('/Users/tkoyama/.vim/dein/')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
 
-  call dein#add('tomtom/tcomment_vim') " commnet on some laws
+  "call dein#add('tomtom/tcomment_vim') " commnet on some laws
   call dein#add('cohama/lexima.vim') " insert cacco automatically
   call dein#add('vim-scripts/AnsiEsc.vim') " log color scheme
   "call dein#add('bronson/vim-trailing-whitespace') " visualize margin space on line
   call dein#add('junegunn/vim-easy-align') " modify code
+
+  " Twitter for Vim
+  call dein#add('twitvim/twitvim')
+  let twitvim_enable_python = 1
+  let twitvim_browser_cmd = 'open' " for Mac
+  let twitvim_force_ssl = 1 
+  let twitvim_count = 40
+
 
   " vim explorer
   call dein#add('Shougo/unite.vim') " useful plugin to use vimfilter and more
@@ -89,6 +98,9 @@ if dein#load_state('/Users/tkoyama/.vim/dein/')
   " indent guide on colum
   call dein#add('nathanaelkane/vim-indent-guides')
   let g:indent_guides_enable_on_vim_startup = 1
+
+  " color shceme
+  call dein#add('trusktr/seti.vim')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })

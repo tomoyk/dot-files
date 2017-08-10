@@ -62,3 +62,5 @@ export XDG_CONFIG_HOME=$HOME/.config
 # myIP
 alias ip='ifconfig -v en0'
 
+# Git
+alias gpom='git push origin master'
