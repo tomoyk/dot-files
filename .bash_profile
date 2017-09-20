@@ -22,16 +22,16 @@ alias clear-byobu="/usr/local/lib/byobu/include/tmux-detach-all-but-current-clie
 alias simple="export PS1='$ '"
 
 # python
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # color-panic
 alias color-panic=':(){ echo printf\ \"\\e[{30..37}m\"\;sleep\ 1\;|bash;:&};:&'
 alias color-clear='pgrep "\-bash" | xargs kill -9'
 
 # go
-export GOPATH=$HOME/.go
+# export GOPATH=$HOME/.go
 
 # check sum
 alias sha512sum='openssl dgst -sha512'
@@ -64,3 +64,10 @@ alias ip='ifconfig -v en0'
 
 # Git
 alias gpom='git push origin master'
+
+# seccamp
+# alias ssh-camp="sudo ssh ssh2@153.127.215.149 -L 80:192.168.0.6:80 -L 5901:192.168.0.6:5902"
+# alias cd-camp="cd /Users/tkoyama/Google\ ドライブ/seccamp2017"
+
+# 
+alias ssh-raspi='ssh 10.203.10.102 -l pi'
