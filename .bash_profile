@@ -71,3 +71,18 @@ alias gpom='git push origin master'
 
 # 
 alias ssh-raspi='ssh 10.203.10.102 -l pi'
+
+# Added New VIM
+alias vim='/usr/local/Cellar/vim/8.0.1150/bin/vim'
+
+# Port status
+alias ports='netstat -antu | grep -i listen'
+
+# sudo
+alias suod='sudo'
+
+# lock
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+# docker 
+alias docker-php="docker run --rm -p 8000:80 -v /Users/tkoyama/public_html:/var/www/html --name php7 -d php:7.0-apache"
