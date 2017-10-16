@@ -1,0 +1,52 @@
+{
+	// Characters
+	"font_size": 17,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+
+	// ColorScheme
+	"theme": "Lanzhou.sublime-theme",
+	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
+
+	// Editor UI
+	"margin": 0,
+	"fold_buttons": true,
+	"fade_fold_buttons": false,
+	"scroll_past_end": true,
+
+	// Indent and Tab
+	"tab_size": 2,
+	"detect_indentation": true,
+	"auto_indent": true,
+	"smart_indent": true,
+	"indent_to_bracket": true,
+	"use_tab_stops": true,
+	"translate_tabs_to_spaces": false,
+
+	// Cursor and Highlight
+	"highlight_line": true,
+	"caret_style": "blink",
+	"match_brackets": true,
+	"match_selection": true,
+	"draw_white_space": "all",
+
+	// Save adn Modify
+	"trim_trailing_white_space_on_save": true,
+	"save_on_focus_lost": false,
+
+	// Complete
+	"tab_completion": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true, // decide on [tab]
+	"auto_close_tags": true, // for HTML
+
+	// Close working window
+	"hot_exit": true,
+	"remember_open_files": false,
+
+	// Show Errors
+	"show_errors_inline": true,
+
+}
