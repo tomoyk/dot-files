@@ -4,3 +4,6 @@ alias uskbd='setxkbmap us'
 # Change caps to ctrl
 alias ctrl2caps='setxkbmap -option ctrl:swapcaps'
 
+# byobu
+alias clear-byobu="/usr/local/lib/byobu/include/tmux-detach-all-but-current-client"
+

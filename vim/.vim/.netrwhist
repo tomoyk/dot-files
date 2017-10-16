@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/tkoyama/a'
+let g:netrw_dirhist_2='/Users/tkoyama/.ssh'
+let g:netrw_dirhist_3='/Users/tkoyama/Scapy-Practice'
+let g:netrw_dirhist_4='/Users/tkoyama/jekyll-demo/_posts'
+let g:netrw_dirhist_5='/Users/tkoyama/jekyll-kieta-theme-0.1-alpha.2/_includes/page/sidebar'
+let g:netrw_dirhist_6='/Users/tkoyama/TEST_BLOG/blog/_layouts'
