@@ -1,6 +1,0 @@
-# Set us-keyboard
-alias uskbd='setxkbmap us'
-
-# Change caps to ctrl
-alias ctrl2caps='setxkbmap -option ctrl:swapcaps'
-
