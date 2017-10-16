@@ -1,0 +1,14 @@
+# lock
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+# Added New VIM
+alias vim='/usr/local/Cellar/vim/8.0.1150/bin/vim'
+
+# myIP
+alias ip='ifconfig -v en0'
+
+# wireshark
+alias wireshark='open -n /Applications/Wireshark.app/'
+
+# POSIX
+alias tac='tail -r'
