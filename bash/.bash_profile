@@ -2,12 +2,12 @@
 export PATH=/usr/local:$PATH
 
 # include Platform confs
-for foo in {mac,linux}
-do
-  if [ -f ~/.bash_alias_$foo ]; then
-      . ~/.bash_alias_$foo
-  fi
-done
+# for foo in {mac,linux}
+# do
+#   if [ -f ~/.bash_alias_$foo ]; then
+#       . ~/.bash_alias_$foo
+#   fi
+# done
 
 # shortcuts
 alias dck='docker'
