@@ -86,3 +86,6 @@ alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 
 # python
 alias py='python3'
+
+# ssh-port-forward
+alias portforward="ssh kohada -L 8001:kohada:8000 -N"
