@@ -39,7 +39,7 @@ inoremap <C-h> <left>
 inoremap <C-l> <right>
 
 " Filer
-noremap <S-f> VimFiler -split -simple -winwidth=35 -no-quit
+noremap <S-f> :VimFiler -split -simple -winwidth=35 -no-quit<ENTER>
 
 " Modified code
 nnoremap == gg=G
@@ -48,8 +48,8 @@ nnoremap == gg=G
 noremap 11 :VimFiler -split -simple -winwidth=30 -no-quit<ENTER>
 
 " enable vimfiler
-" autocmd VimEnter * VimFilerExplorer
-" autocmd VimEnter * VimFilerExplorer | call s:MovePointerToMain()
+autocmd VimEnter * VimFilerExplorer
+autocmd VimEnter * VimFilerExplorer | call s:MovePointerToMain()
 
 function s:MovePointerToMain()
   call feedkeys("\<C-w>")
