@@ -12,3 +12,7 @@ alias wireshark='open -n /Applications/Wireshark.app/'
 
 # POSIX
 alias tac='tail -r'
+
+# google drive
+alias cdcol="cd /Users/tkoyama/Google\ Drive\ File\ Stream/マイドライブ/College"
+
