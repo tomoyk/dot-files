@@ -44,6 +44,8 @@ alias sl='ls'
 alias l='ls'
 alias cdd='cd $_'
 alias suod='sudo'
+alias sud='sudo'
+alias udo='sudo'
 
 # overwrite
 alias exiftool='exiftool -lang ja'
@@ -54,7 +56,6 @@ alias simple="export PS1='$ '"
 alias ports='netstat -antu | grep -i listen'
 alias mkwdir='mkdir work_$(date +%Y%m%d); cd $_'
 alias gpom='git push origin master'
-alias ip='ifconfig -v en0'
 alias py='python3'
 alias jwhois="whois -h whois.jprs.jp"
 
